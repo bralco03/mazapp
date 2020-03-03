@@ -9,23 +9,34 @@
     <title>Mazapp</title>
 </head>
 <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="sidebar">
-      <header>Rutas</header>
-      <ul>
-          <li><a href="#"><i class="fas fa-qrcode"></i>Urias Sabalo</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt"></i>Sabalo Cocos</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt"></i>Gran Plaza</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt"></i>Chula Vista</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt"></i>Real Pacifico</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt"></i>Real del Valle</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt"></i>Sirena</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt"></i>Morelos</a></li>
-      </ul>
+    <div class="main">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+        <header>Rutas</header>
+        
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Urias Sabalo</a></li>
+            <li><a href="#"><i class="fas fa-bus-alt"></i>Sabalo Cocos</a></li>
+            <li><a href="#"><i class="fas fa-bus-alt"></i>Gran Plaza</a></li>
+            <li><a href="#"><i class="fas fa-bus-alt"></i>Chula Vista</a></li>
+            <li><a href="#"><i class="fas fa-bus-alt"></i>Real Pacifico</a></li>
+            <li><a href="#"><i class="fas fa-bus-alt"></i>Real del Valle</a></li>
+            <li><a href="#"><i class="fas fa-bus-alt"></i>Sirena</a></li>
+            <li><a href="#"><i class="fas fa-bus-alt"></i>Morelos</a></li>
+        </ul>
+        </div>
+        <div class="toll-cost">
+            <h3><strong>Costo:</strong>10.00 - 11.00 $MXN</h3>
+        </div>
+        <div class="map-container" id="map-container"> </div>
     </div>
+    
+    <script src="app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb0BsKz11R1pHxTxNYjp7bfbHJi5sdLb8&callback=initMap"
+    async defer></script>
 </body>
 </html>

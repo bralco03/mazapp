@@ -7,21 +7,30 @@
     text-decoration: none;
     font-family: 'Abel';
     /* font-family: 'Open Sans Condensed'; */
+    /* overflow-x: hidden; */
 }
 html{
     scroll-behavior: smooth;
 }
 i{
     padding: 10px;
+    top: 30px;
 }
 :root{
    --main-bg-color: #4169E1;
    --textcolor: black; 
    --iconcolor: #FFFAF0
 }
+
+/* main container */
+.main{
+    background-color: var(--main-bg-color);
+}
+
+/* Sidebar */
 .sidebar{
     position: fixed;
-    left: -250px;
+    left: -100vh;
     width: 30vh;
     height: 100%;
     background-color: var(--main-bg-color);
@@ -88,4 +97,22 @@ label #cancel{
 }
 #check:checked ~ label #cancel{
     left: 155px;
+}
+/* TOLL COST */
+
+.toll-cost{
+   height: 9vh;
+   width: 35vh;
+   color: blue; 
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   padding-top: 5px;
+}
+/* Map container */
+.map-container{
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
 }
